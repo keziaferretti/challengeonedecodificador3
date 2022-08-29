@@ -5,7 +5,7 @@ const mensagem = document.querySelector(".mensagem");
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensagem.value = textoEncriptado
-    document.style.backgroundImage = "none";
+    mensagem.style.backgroundImage = "none"
 }
 
 // As "chaves" de criptografia que utilizaremos são:
@@ -31,6 +31,7 @@ function encriptar(stringEncriptada) {
 function btnDesencriptar() {
     const textodesencriptado = desencriptar(inputTexto.value)
     mensagem.value = textodesencriptado
+    mensagem.style.backgroundImage = "none"
 }
 
 function desencriptar(stringDesencriptada) {
