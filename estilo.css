@@ -1,74 +1,103 @@
-*{
-    background: rgb(243,245,252);
-    font-family: 'Inter';
-
-}
-
-.apenasletras{
-    width: 228px;
-    height: 18px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400px;
     line-height: 150%;
 }
 
-#mensagem{
-    width: 100%;
-    vertical-align: top;
-    margin: 2%;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    resize: none;
-    border: none;
-    outline: none;
-    background-color: #F3F5FC;
-    color: #0A3871;
+body {
+    background-color: #E5E5E5;
 }
 
-.botao-criptografar {
-    padding: 24px;
-    gap: 8px;
+header {
+    margin-left: 40px;
+}
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.input-texto {
+    margin-top: 90px;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: none;
+    border: #E5E5E5;
+}
+
+.input-texto:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.mensagem {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 90px;
+    background-image: url('menino.svg');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 80%;
+    border: none;
+    border-radius: 10px;
+
+} 
+
+.mensagem:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.encriptar {
     width: 328px;
     height: 67px;
     background: #0A3871;
     border-radius: 24px;
     color: #FFFFFF;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
 }
 
-.botao-descriptografar{
-    padding: 24px;
-    gap: 8px;
+.desencriptar {
     width: 328px;
     height: 67px;
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 }
 
+button:hover {
+    transition: 0.3s;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
 
-.imagem-menino{
-    position: absolute;
-    width: 400px;
-    height: 944px;
-    background: #FFFFFF;
+.copiar {
+    position: relative;
+    margin-top: 600px;
+    margin-left: 160px;
+    color: #0A3871;
+    width: 190px;
+    height: 60px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.informacao {
+    font-size: 15px;
+}
+
+.rodape {
+    text-align: center;
+	padding: 40px 0;
 
 }
 
-#saida {
-    position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
-}
