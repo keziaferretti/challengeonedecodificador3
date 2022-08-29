@@ -30,6 +30,12 @@ main {
     border: #E5E5E5;
 }
 
+.input-texto:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
 .mensagem {
     position: absolute;
     margin-top: 20px;
@@ -42,6 +48,13 @@ main {
     border-radius: 10px;
 
 } 
+
+
+.mensagem:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
 
 .encriptar {
     width: 328px;
